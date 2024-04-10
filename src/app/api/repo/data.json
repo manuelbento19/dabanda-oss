@@ -1,0 +1,8 @@
+[
+    {
+        "name":"ollama-bot",
+        "description":"OllamaBot: Um assistente virtual inteligente, baseado em contêiner, capaz de interagir naturalmente em uma variedade de contextos.",
+        "url":"https://github.com/manuelbento19/ollama-bot",
+        "techs": ["Typescript","Javascript","SCSS","HTML","Dockerfile","Shell"]
+    }
+]

@@ -1,10 +1,16 @@
 import { Badge } from "@/components/badge";
 import { CgSearch } from "react-icons/cg";
 import { DiGithubBadge } from "react-icons/di";
+import { Repo } from "@/types";
+import { Card } from "@/components/card";
 
 const techs = ["Next.js","Typescript","React","Tailwind CSS","Vite"]
 
-export default function Home() {
+export default async function Home() {
+  const request = await fetch("http://127.0.0.1:3000/api/repo");
+  const data:Repo[] = await request.json();
+  console.log(data);
+
   return (
     <main className="min-h-screen py-10 bg-gray-900 text-white">
       <div className="mx-auto max-w-screen-xl flex flex-col items-center">
@@ -17,18 +23,7 @@ export default function Home() {
           </div>
         </header>
         <section className="px-4 mt-4 h-[85vh] overflow-auto grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {Array.from({length:10}).map((_,index)=>(
-            <article key={index} className="bg-gray-800 shadow-lg rounded p-4 flex flex-col justify-between">
-              <div className="flex items-center gap-2 mb-2">
-                <DiGithubBadge className="size-8"/>
-                <h2 className="text-xl font-medium">ollama-bot</h2>
-              </div>
-              <p className="text-sm text-slate-400 leading-6">OllamaBot: Um assistente virtual inteligente, baseado em contêiner, capaz de interagir naturalmente em uma variedade de contextos.</p>
-              <div className="mt-2 text-xs leading-6 flex flex-row flex-wrap gap-2">
-                {techs.map((item,index)=> <Badge key={index} label={item}/>)}
-              </div>
-            </article>
-          ))}
+          {data.map((item,index)=> <Card key={index} repo={item}/>)}
         </section>
       </div>
     </main>
