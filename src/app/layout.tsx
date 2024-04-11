@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DaBanda | OSS",
     description: "DaBanda Open Source",
-    url: "",
+    url: "https://dabanda-oss.vercel.app/",
     siteName: "DaBanda",
     locale: "pt_PT",
     type: "website",

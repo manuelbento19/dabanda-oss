@@ -1,7 +1,6 @@
-import { CgSearch } from "react-icons/cg";
-import { Suspense,lazy } from "react";
+import { Suspense, lazy } from "react";
 import { Header } from "@/components/header";
-const RepoList = lazy(()=>import('@/components/repoList'))
+const RepoList = lazy(()=>import("@/components/repoList"))
 
 export default async function Home() {
 
