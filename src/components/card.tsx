@@ -11,7 +11,7 @@ export const Card = ({repo}:CardProps) => {
     <article className="h-fit bg-gray-800 shadow-lg rounded p-4 flex flex-col justify-between transition duration-500 hover:-translate-y-1 border hover:border-blue-600">
       <div className="flex items-center gap-2 mb-2">
         <DiGithubBadge className="size-8"/>
-        <a href={repo.url} target='_blank' className='hover:text-white/80'>
+        <a href={repo.url} target='_blank' className="hover:text-white/80">
           <h2 className="text-xl font-medium">{repo.name}</h2>
         </a>
       </div>
