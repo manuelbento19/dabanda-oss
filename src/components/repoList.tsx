@@ -2,7 +2,7 @@ import { Repo } from '@/types';
 import { Card } from './card';
 
 export default async function RepoList(){
-  const request = await fetch("http://127.0.0.1:3000/api/repo",{cache: "no-cache"});
+  const request = await fetch("http://localhost:3000/api/repo",{cache: "no-cache"});
   const data:Repo[] = await request.json();
 
   return (

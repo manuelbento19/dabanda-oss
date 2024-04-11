@@ -7,6 +7,19 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "DaBanda | OSS",
   description: "DaBanda Open Source",
+  authors: {
+    name: "Manuel Bento",
+    url: "https://github.com/manuelbento19/"
+  },
+  metadataBase: new URL("https://dabanda-oss.vercel.app/"),
+  openGraph: {
+    title: "DaBanda | OSS",
+    description: "DaBanda Open Source",
+    url: "",
+    siteName: "DaBanda",
+    locale: "pt_PT",
+    type: "website",
+  }
 };
 
 export default function RootLayout({
