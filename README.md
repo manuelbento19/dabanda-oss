@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DaBanda OSS 
 
-## Getting Started
+![Resultado final do projeto](./public/preview.png)
 
-First, run the development server:
+**DaBanda-OSS** é uma plataforma desenvolvida em Next.js dedicada a promover e destacar projetos de código aberto de diversas áreas e temáticas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Com uma interface intuitiva e moderna, DaBanda-OSS oferece uma maneira fácil e acessível de descobrir e contribuir para uma variedade de projetos de código aberto. Desde ferramentas de desenvolvimento até iniciativas de ciência de dados e software de código aberto, nossa plataforma conecta entusiastas, desenvolvedores e colaboradores, impulsionando a inovação e o compartilhamento de conhecimento.
+
+## Configuração do Ambiente
+
+#### 1. Clone o repositório:
+```sh
+git clone https://github.com/manuelbento19/dabanda-oss.git
 ```
+***Att**: Certifique-se de ter o Docker e o Docker Compose instalados em seu sistema.*
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 2. Instale as dependências:
+**NPM**
+```sh
+    npm install
+```
+**Yarn**
+```sh
+    yarn add
+```
+  **Pnpm**
+  ```sh
+  pnpm install
+  ```
+#### 3. Rodar a Aplicação:
+**NPM**
+```sh
+    npm run dev
+```
+**Yarn**
+```sh
+    yarn dev
+```
+  **Pnpm**
+  ```sh
+  pnpm dev
+  ```
+## Contribuição
+Contribuições para o aprimoramento do **DaBanda** são bem-vindas! Sinta-se à vontade para abrir Issues ou enviar pull requests.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Como Contribuir?
+1. Faça **Fork** do repositório: para criar uma cópia do repositório em sua conta GitHub, clique no botão "Fork" no canto superior direito da página do repositório do projeto.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Clone o repositório bifurcado: para clonar o repositório em seu ambiente de desenvolvimento local, abra o terminal ou prompt de comando e execute o seguinte comando:
+   **`git clone https://github.com/<username-github>/dabanda-oss.git`**
 
-## Learn More
+3. Instalar dependências: para instalar as dependências necessárias para o projeto, navegue até o diretório do projeto e execute o seguinte comando:
+   **`npm install`**
+4. Navegue até a pasta **`public/`** no diretório do seu projeto.
 
-To learn more about Next.js, take a look at the following resources:
+5. Abra o arquivo **`data.json`**.
+6. Adicione o seguinte objeto JSON, substituindo os valores do espaço reservado pelos seus próprios detalhes:
+   ```json
+   {
+        "name":"nome-do-projecto",
+        "description":"descricao-do-projecto",
+        "url":"url-do-projecto",
+        "techs": ["array-de-tecnologias"]
+    }
+   ```
+7. Salve o arquivo the **`data.json`** .
+11. Crie uma nova branch: para criar uma nov branch, execute o seguinte comando:
+    **`git checkout -b <nome-da-sua-branch>`**
+12. Adicione seus arquivos alterados a área de stage executando o seguinte comando:
+    **`git add .`**
+13. Faça commit das suas alterações: Para salvar suas alterações na branch, execute o seguinte comando:
+    **`git commit -m "add: <nome-da-sua-branch>"`**
+14. Faça Push: para enviar as alterações para o repositório remoto, execute o seguinte comando:
+    **`git push origin <nome-da-sua-branch>`**
+15. Crie uma solicitação de Pull: para enviar suas alterações ao repositório principal, crie uma solicitação de pull clicando no botão "Comparar e solicitar Pull".
+16. Aguarde a revisão: aguarde até que os mantenedores do projeto revisem e façam merge suas alterações.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Depois que suas alterações forem aceitas, a sua foto será exibida na lista de contribuidores do projeto.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contribuindo 👨‍💻
 
-## Deploy on Vercel
+As contribuições tornam a comunidade de código aberto um lugar incrível para aprender, inspirar e criar.
+<br>
+**Qualquer contribuição que você fizer será verdadeiramente apreciada!**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<a id="contributors"></a>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contribuidores 🤝
+
+<a href="https://github.com/manuelbento19/dabanda-oss/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=manuelbento19/dabanda-oss" />
+</a>
+
+<a id="license"></a>
+
+## Licença
+
+<table>
+  <tr>
+     <td>
+       <p align="center"> <img src="https://github.com/malivinayak/malivinayak/blob/main/LICENSE-Logo/MIT.png?raw=true" width="80%"></img>
+    </td>
+    <td> 
+      <img src="https://img.shields.io/badge/License-MIT-yellow.svg"/> <br> 
+This project is licensed under <a href="./LICENSE">MIT</a>. <img width=2300/>
+    </td>
+  </tr>
+</table>
+
+<a id="support"></a>
+
+## Support 🙏
+
+Obrigado por contribuir com nosso projeto de código aberto! Agradecemos seu apoio 🚀 <br>
+Não se esqueça de deixar uma estrela ⭐
