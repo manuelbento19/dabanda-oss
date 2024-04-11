@@ -1,8 +1,9 @@
 import { Repo } from '@/types';
 import { Card } from './card';
+import { useEffect } from 'react';
 
 export default async function RepoList(){
-  const request = await fetch("http://localhost:3000/api/repo",{cache: "no-cache"});
+  const request = await fetch(`${process.env.API_URL}`,{cache: "no-cache"});
   const data:Repo[] = await request.json();
 
   return (
