@@ -1,7 +1,6 @@
-import { Repo } from '@/types';
-import React from 'react'
 import { DiGithubBadge } from 'react-icons/di';
 import { Badge } from './badge';
+import { Repo } from '@/types';
 
 type CardProps = {  
   repo: Repo
@@ -9,10 +8,12 @@ type CardProps = {
 
 export const Card = ({repo}:CardProps) => {
   return (
-    <article className="bg-gray-800 shadow-lg rounded p-4 flex flex-col justify-between">
+    <article className="h-fit bg-gray-800 shadow-lg rounded p-4 flex flex-col justify-between">
       <div className="flex items-center gap-2 mb-2">
         <DiGithubBadge className="size-8"/>
-        <h2 className="text-xl font-medium">{repo.name}</h2>
+        <a href={repo.url} target='_blank'>
+          <h2 className="text-xl font-medium">{repo.name}</h2>
+        </a>
       </div>
       {repo.description && <p className="text-sm text-slate-400 leading-6">{repo.description}</p>}
       <div className="mt-2 text-xs leading-6 flex flex-row flex-wrap gap-2">
